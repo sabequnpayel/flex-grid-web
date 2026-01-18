@@ -5,6 +5,12 @@
 .bg{
     background-color: rgba(255, 144, 14, 0.1);
 }
+.text-d1{
+    color: #131313;
+}
 .text-d2{
     color: #424242;
+}
+.text-d3{
+    color: #727272;
 }
