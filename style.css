@@ -27,12 +27,21 @@
 .text-d3{
     color: #727272;
 }
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 24px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+}
 
 
 /*front page*/
 .nav-bar{
 justify-content: space-between;
-margin: 0 auto;
+align-items: center;
 }
 .nav-list{
     margin-right: 50px;
@@ -41,4 +50,37 @@ margin: 0 auto;
 .nav-item{
     text-decoration: none;
     
+}
+.Brand{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.nav-bar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+.banner-des{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-image{
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .nav-links, .nav-bar{
+        flex-direction: column;
+    }
 }
