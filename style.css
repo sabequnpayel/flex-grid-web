@@ -12,6 +12,9 @@
 }
 
 /*Shared items*/
+.display-flex{
+    display: flex;
+}
 .bg{
     background-color: rgba(255, 144, 14, 0.1);
 }
@@ -23,4 +26,19 @@
 }
 .text-d3{
     color: #727272;
+}
+
+
+/*front page*/
+.nav-bar{
+justify-content: space-between;
+margin: 0 auto;
+}
+.nav-list{
+    margin-right: 50px;
+    list-style: none;
+}
+.nav-item{
+    text-decoration: none;
+    
 }
