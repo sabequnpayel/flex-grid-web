@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 2px;
 }
 
 
@@ -40,6 +40,12 @@ body {
     font-weight: 600;
     border: none;
     border-radius: 8px;
+}
+.section-title{
+    font-weight: 700;
+    color: #131313;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -102,12 +108,6 @@ main > section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-}
-.feature{
-    font-weight: 700;
-    color: #131313;
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
 }
 #quick-fix{
     color: #727272;
