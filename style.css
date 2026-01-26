@@ -140,3 +140,12 @@ main > section{
     }
     
 }
+/*for medium device*/
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .items{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 45px;
+    }
+}
