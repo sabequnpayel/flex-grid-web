@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 
 .open-sans-font{
   font-family: "Open Sans", sans-serif;
@@ -63,9 +68,12 @@ align-items: center;
 .banner-title{
     font-size: 4rem;
     font-weight: 700;
+    margin-bottom: 0px;
 
 }
 .banner-des{
+    margin-top: 24px;
+    margin-bottom: 30px;
     font-size: 1rem;
     font-weight: 400;
 }
@@ -79,8 +87,56 @@ align-items: center;
     width: 100%;
 }
 
+/*second page*/
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
+.items{
+   align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.feature{
+    font-weight: 700;
+    color: #131313;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+#quick-fix{
+    color: #727272;
+    font-weight: 500;
+}
+.color-text{
+    color: #FF900E;
+}
+.our-features{
+    margin-left: 130px;
+    
+}
+
 @media screen and (max-width: 576px) {
-    .nav-links, .nav-bar{
+    .nav-links,
+     .nav-bar,
+     .items{
         flex-direction: column;
     }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+    .banner-content{
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+    
 }
