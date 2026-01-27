@@ -45,7 +45,7 @@ body {
     font-weight: 700;
     color: #131313;
     font-size: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
 }
 
 
@@ -78,7 +78,7 @@ align-items: center;
 
 }
 .banner-des{
-    margin-top: 24px;
+    margin-top: 20px;
     margin-bottom: 30px;
     font-size: 1rem;
     font-weight: 400;
@@ -120,6 +120,35 @@ main > section{
     margin-left: 130px;
     
 }
+/*some facts*/
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card-container{
+    width: 250px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: #FF900E 1px solid;
+    border-radius: 8px;
+}
+.fact-card{
+  padding-top: 45px;
+  padding-bottom: 60px;
+    
+}
+.fact-num{
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+}
+.fact-name{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0px;
+}
 
 @media screen and (max-width: 576px) {
     .nav-links,
@@ -131,21 +160,42 @@ main > section{
         grid-template-columns: repeat(1, 1fr);
     }
     .our-features{
-        margin-left: 20px;
+        margin: auto;
     }
     .banner-content{
-        margin-left: 5px;
-        margin-right: 5px;
-
+        margin: 0px;
+        > .btn-primary{
+            margin-bottom: 50px;
+        }
     }
-    
+    .section-title{
+        padding-left: 5px;
+    }
+    .banner-des{
+        padding-left: 5px;
+    }
+    .fact-container{
+         grid-template-columns: repeat(1, 1fr);
+         gap: 20px;
+    }
+    .card-container{
+        margin:auto;
+    }
 }
 /*for medium device*/
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .items{
         flex-direction: column;
     }
-    .our-features{
+    .our-features,
+    .fact-des{
         margin-left: 45px;
+    }
+    .fact-container{
+         grid-template-columns: repeat(2, 1fr);
+         gap: 20px;
+    }
+ .card-container{
+        margin:auto;
     }
 }
