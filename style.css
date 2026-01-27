@@ -120,6 +120,16 @@ main > section{
     margin-left: 130px;
     
 }
+
+/*features experience*/
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 15px;
+}
+.features{
+    align-items: center;
+    gap: 140px;
+}
 /*some facts*/
 .fact-container{
     display: grid;
